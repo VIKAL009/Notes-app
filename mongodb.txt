@@ -1,0 +1,47 @@
+//0--   mkdir xx     touch  xy.js yy.html
+//1--   npm init     (package.jason)
+//2--   npm i express (package.jason,node-mpdules)
+//3--   npm i body-parser
+//4--   npm i request
+//5--   npm i mongoose
+//********************************************
+//0.mongo --version
+//1.mongod
+//2.mongo
+//3.help
+//4.show dbs     (all dbs)
+//5.db           (current db)
+//6.use shopDB   (create db)  or to switch
+//show collections         shows tables
+//db.dropDatabase()
+************************************in shopDB in mongo shell**************************
+//db.products.insertOne({_id: 1,name: "pen",price: 20})   (create table and insert data)
+//db.products.find({name: "pen"})  db.find.products({price: {$gt: 1}},{name: 1,_id: 0})
+//db.products.updateOne({_id: 2},{$set: {stocks: 12}})
+//db.products.deleteOne({_id: 2})
+/*****************************************************
+db.products.insertOne(
+   {
+      _id: 2,
+      name: "pencil",
+      price: 20,
+      reviews:[
+            {
+             authorName: "vikal",
+             rating: 5,
+             review: "best pen"
+             },
+                {
+                  authorName: "vimal",
+                  rating: 5,
+                  review: "best wesome pen"
+                }
+             ]
+   }
+)
+//***************************************************
+npm i mongodb
+
+
+
+
